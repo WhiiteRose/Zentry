@@ -19,11 +19,19 @@ const About = () => {
       },
     });
 
-    clipAnimation.to('.mask-clip-path', {
-      width: '100vw',
-      height: '100vh',
-      borderRadius: 0,
-    });
+    clipAnimation.fromTo(
+      '.mask-clip-path',
+      {
+        width: window.innerWidth < 768 ? '60vw' : '50vw',
+        height: '60vh',
+        borderRadius: 24,
+      },
+      {
+        width: '100vw',
+        height: '100vh',
+        borderRadius: 0,
+      }
+    );
   });
 
   return (
