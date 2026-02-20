@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Button from './Button';
 import { TiLocationArrow } from 'react-icons/ti';
+import { ArrowUpRight, ZentryLogo } from './icons';
 import { useWindowScroll } from 'react-use';
 import gsap from 'gsap';
 
-const navItems = ['Nexus', 'Vault', 'Prologue', 'About', 'Contact'];
+const navItems = ['Nexus', 'About', 'Contact'];
 
 const NavBar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -65,29 +66,26 @@ const NavBar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7">
-            <img
-              src="/img/logo.png"
-              alt="logo"
-              className="w-10"
-            />
+            <ZentryLogo className="w-24 text-white" />
             <Button
               id="product-button"
               title="Products"
-              rightIcon={<TiLocationArrow />}
+              rightIcon={<ArrowUpRight />}
               containerClass={
-                'bg-blue-50 md:flex hidden items-center justify-center gap-1'
+                'bg-blue-50 md:flex hidden font-bold items-center justify-center gap-1 !px-4 !py-1.5 !text-[10px]'
               }
             />
           </div>
           <div className="flex h-full items-center">
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center">
               {navItems.map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="nav-hover-btn"
+                  className="nav-hover-btn flex items-center gap-1"
                 >
                   {item}
+                  <ArrowUpRight className="w-2.5 h-2.5" />
                 </a>
               ))}
             </div>
