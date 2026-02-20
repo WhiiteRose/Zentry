@@ -20,7 +20,7 @@ const About = () => {
     });
 
     clipAnimation.fromTo(
-      '.mask-clip-path',
+      '#clip .mask-clip-path',
       {
         width: window.innerWidth < 768 ? '60vw' : '50vw',
         height: '60vh',
