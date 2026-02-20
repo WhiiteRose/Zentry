@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { TiLocationArrow } from 'react-icons/ti';
+import { ArrowDown } from './icons';
 import Button from './Button';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -137,15 +138,12 @@ const Hero = () => {
             <h1 className="special-font hero-heading text-blue-100">
               redefi<b>n</b>e
             </h1>
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+            <p className="mb-5 max-w-72 lg:max-w-96 font-robert-regular text-sm md:text-base lg:text-lg text-blue-100">
+              Enter the Metagame Layer.
+              <br />
+              The substrate where life, data, and AI form a perpetual
+              engine, compounding intelligence, capability, and value.
             </p>
-            <Button
-              id="watch-trailer"
-              title="Watch Trailer"
-              leftIcon={<TiLocationArrow />}
-              containerClass="!bg-yellow-300 flex-center gap-1"
-            />
           </div>
         </div>
       </div>
