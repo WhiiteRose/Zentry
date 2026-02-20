@@ -28,7 +28,7 @@ An immersive, award-winning landing page clone of **Zentry**, built with **React
 
 |                             Story Section                              |                               Contact & Footer                               |
 | :--------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
-| [![Story](public/screenshots/story.png)](public/screenshots/story.png) | [![Contact](public/screenshots/contact.png)](public/screenshots/contact.png) |
+| [![Story](public/screenshots/story.png)](public/screenshots/story.png) | [![Contact](public/screenshots/footer.png)](public/screenshots/footer.png) |
 
 ## ⚙️ Getting Started
 
